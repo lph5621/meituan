@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/swiper.min.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <script src="scripts/rem.js"></script>
+    
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <b>美团外卖</b>
+            <div class="header-right">
+                <img src="img/d1.png" alt="">
+            </div>
+        </header>
+        <main class="main">
+            <p><input type="text" placeholder="米线"></p>
+            <div class="main-title">
+                <div class="swiper-container" id="title-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <li><img src="img/1.png" alt=""><span>美食</span></li>
+                            <li><img src="img/2.png" alt=""><span>超市福利</span></li>
+                            <li><img src="img/3.png" alt=""><span>生鲜果蔬</span></li>
+                            <li><img src="img/4.png" alt=""><span>美团专送</span></li>
+                            <li><img src="img/5.png" alt=""><span>跑腿代购</span></li>
+                            <li><img src="img/6.png" alt=""><span>早餐</span></li>
+                            <li><img src="img/7.png" alt=""><span>甜品饮品</span></li>
+                            <li><img src="img/8.png" alt=""><span>家常菜</span></li>
+                            <li><img src="img/9.png" alt=""><span>减免配送费</span></li>
+                            <li><img src="img/10.png" alt=""><span>品牌连锁</span></li>
+                        </div>
+                        <div class="swiper-slide">
+                                <li><img src="img/1.png" alt=""><span>美食</span></li>
+                                <li><img src="img/2.png" alt=""><span>超市福利</span></li>
+                                <li><img src="img/3.png" alt=""><span>生鲜果蔬</span></li>
+                                <li><img src="img/4.png" alt=""><span>美团专送</span></li>
+                                <li><img src="img/5.png" alt=""><span>跑腿代购</span></li>
+                                <li><img src="img/6.png" alt=""><span>早餐</span></li>
+                                <li><img src="img/7.png" alt=""><span>甜品饮品</span></li>
+                                <li><img src="img/8.png" alt=""><span>家常菜</span></li>
+                                <li><img src="img/9.png" alt=""><span>减免配送费</span></li>
+                                <li><img src="img/10.png" alt=""><span>品牌连锁</span></li>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination" id="pagination"></div>
+                </div>
+            </div>
+            <div class="main-better-scroll">
+                <div class="better-box">
+                    <li><img src="img/a1.png" alt=""><span>￥156</span></li>
+                    <li><img src="img/a2.png" alt=""><span>￥156</span></li>
+                    <li><img src="img/a1.png" alt=""><span>￥156</span></li>
+                    <li><img src="img/a2.png" alt=""><span>￥156</span></li>
+                    <li><img src="img/a1.png" alt=""><span>￥156</span></li>
+                    <li><img src="img/a2.png" alt=""><span>￥156</span></li>
+                    <li><img src="img/a1.png" alt=""><span>￥156</span></li>
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer">
+            <li><i class="icon iconfont icon-shouye"></i><span>首页</span></li>
+            <li><i class="icon iconfont icon-dazhongdianping"></i><span>点评</span></li>
+            <li><i class="icon iconfont icon-wode-xuanzhong"></i><span>我的</span></li>
+        </footer>
+    </div>
+
+    <script src="scripts/swiper.min.js"></script>
+    <script src="scripts/bscroll.js"></script>
+    <script>
+        var swiper = new Swiper("#title-container",{
+            autoplay:true,
+            loop:true,
+            pagination:{
+                el:"#pagination"
+            }
+        })
+
+        var scroll = new BScroll(".main-better-scroll",{
+            scrollX:true,
+        })
+    </script>
+</body>
+
+</html>
